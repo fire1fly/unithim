@@ -16,3 +16,5 @@ html(lang="ru")
       .layout(class=pageModificator)
         block page
       block portals
+        if (!isNoMenu)
+          include ../components/_menu.pug
