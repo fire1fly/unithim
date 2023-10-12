@@ -22,6 +22,9 @@ module.exports = {
         "primary-reg": ['Rubik Regular', 'system-ui, -apple-system, BlinkMacSystemFont, sans-serif'],
         "primary-light": ['Rubik Light', 'system-ui, -apple-system, BlinkMacSystemFont, sans-serif'],
       },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(180deg, #2E0D6E 0%, #4016A1 69.42%)',
+      }
     },
   },
   plugins: [],
