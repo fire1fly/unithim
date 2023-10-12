@@ -1,16 +1,19 @@
 export function mobileMenu() {
-  const menuEl = document.querySelector('.menu');
-  const btnOpen = document.querySelector('.menu-open');
-  const btnClose = document.querySelector('.menu-close');
+  const menuOverlayEl = document.querySelector('.menu-overlay');
+  const menuBtn = document.querySelector('.menu-btn');
 
-  btnOpen?.addEventListener("click", () => {
-    menuEl?.classList.add("_active");
-    btnOpen?.classList.add("_active");
-    document.body.classList.add("overflow-hidden");
+  menuBtn?.addEventListener("click", () => {
+    menuOverlayEl?.classList.toggle("_active");
+    menuBtn?.classList.toggle("_active");
+    document.body.classList.toggle("_menu-open");
   });
-  btnClose?.addEventListener("click", () => {
-    menuEl?.classList.remove("_active");
-    btnOpen?.classList.remove("_active");
-    document.body.classList.remove("overflow-hidden");
+
+  menuOverlayEl?.addEventListener("click", e => {
+    const menu = (e.target as HTMLElement).closest(".menu");
+    if (!menu) {
+      menuOverlayEl?.classList.remove("_active");
+      menuBtn?.classList.remove("_active");
+      document.body.classList.remove("_menu-open");
+    }
   });
 }
