@@ -1,5 +1,8 @@
 extends ../layouts/main.pug
 
+block variables
+  - var pageTitle = 'Главная'
+
 block page
-  .box(class="h-[2000px]")
-    h1 Hello, friend!
+  .box(class="bg-gradient-primary h-[2000px]")
+    include ../components/_header.pug
