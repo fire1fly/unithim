@@ -24,6 +24,9 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-primary': 'linear-gradient(180deg, #2E0D6E 0%, #4016A1 69.42%)',
+      },
+      backgroundColor: {
+        'primary-main': '#E757A2'
       }
     },
   },
