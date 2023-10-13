@@ -1,0 +1,28 @@
+-
+  var tabsList = [
+    {
+      index: '01',
+      value: 'Снабжение промышленных предприятий в России и СНГ'
+    },
+    {
+      index: '02',
+      value: 'Комплексные поставки химической продукции'
+    },
+    {
+      index: '03',
+      value: 'Импорт товаров со всего мира'
+    },
+  ]
+
+.mt
+  .mt-inner.container.tabs(class="flex gap-14")
+    .tabs-node-wrapper(class="border-t-[3px] border-solid border-white/40 flex-grow flex")
+      each item, index in tabsList
+        .tabs-node(data-box-id=index class="flex-grow" class=(item.index === '01' ? 'active': ''))
+          .mt-tabs-content(class="pt-6")
+            p(class="m-0 font-primary-bold text-[21px] text-white")= item.value
+    .tabs-list(class="pt-[7px] flex-shrink-0 flex gap-6")
+      each item, index in tabsList
+        .mt-tabs-item.tabs-item(data-value=item.index data-box-id=index class="flex-grow h-full p-3 flex justify-center items-center bg-white/20 cursor-pointer duration-200 hover:bg-white/30" class=(item.index === '01' ? 'active': ''))
+          .mt-tabs-item-inner(class="border-b border-solid border-[var(--color-primary-main)] pb-3 font-primary-med text-[19px] text-white")= item.index
+      input(type="hidden" class="tabs-value" value="01")
