@@ -1,5 +1,5 @@
 import '../sass/styles.sass';
-import { mainTabs } from './components/main-tabs';
+import { mainTabs } from './components/mainTabs';
 import { mobileMenu } from './components/mobileMenu';
 import { tabs } from './components/tabs';
 
