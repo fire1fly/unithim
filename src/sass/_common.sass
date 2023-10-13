@@ -22,4 +22,20 @@ body
 .container
   margin: 0 auto
   max-width: 1310px
-  padding: 0 15px
+  padding-left: 15px
+  padding-right: 15px
+
+.tabs
+  &-node
+    display: block
+    visibility: visible
+    &.hidden
+      &:not(.active)
+        display: none
+    &.active
+      display: block
+      animation: tabFadeUp 0.3s ease-in-out 0s 1 normal forwards
+  &._height-transition
+    .tabs-node-wrapper
+      overflow: hidden
+      transition: height 0.5s ease-in-out
