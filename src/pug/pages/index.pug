@@ -4,7 +4,9 @@ block variables
   - var pageTitle = 'Главная'
 
 block page
-  .box(class="bg-gradient-primary h-[2000px]")
+  div(class="bg-gradient-primary shadow-md shadow-black/10")
     include ../components/_header.pug
     include ../components/_main-screen.pug
     include ../components/_main-tabs.pug
+    include ../components/_offer.pug
+  .box(class="h-[500px] bg-[#371381]")
