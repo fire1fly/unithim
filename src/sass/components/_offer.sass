@@ -1,0 +1,49 @@
+.ofr
+  &-row
+    margin-top: 50px
+  &-item
+    &._theme
+      &-pink
+        border-color: var(--color-pink-light)
+        background: var(--color-pink-main)
+      &-blue
+        border-color: var(--color-blue-light)
+        background: var(--color-blue-main)
+      &-violet
+        border-color: var(--color-violet-light)
+        background: var(--color-violet-main)
+    &:nth-of-type(1)
+      transform: translateY(45%)
+    &:nth-of-type(2)
+      transform: translateY(-50%)
+    &:nth-of-type(3)
+      transform: translateY(50%)
+
+@media ( max-width: 1200px )
+  .ofr
+    &-row
+      margin-top: 100px
+
+@media ( max-width: 768px )
+  .ofr
+    &-row
+      margin-top: 5px
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+    &-item
+      &:nth-of-type(1)
+        transform: translateY(0)
+        grid-column: 2/3
+        grid-row: 1/2
+        justify-self: start
+      &:nth-of-type(2)
+        transform: translateY(0)
+        grid-column: 1/2
+        grid-row: 2/3
+        justify-self: start
+      &:nth-of-type(3)
+        transform: translateY(0)
+        grid-column: 2/3
+        grid-row: 3/4
+        justify-self: end
