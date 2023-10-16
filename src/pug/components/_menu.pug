@@ -2,7 +2,7 @@
   var menuLinksList = ["Химические реактивы", "Электрокомпоненты", "Полимерная продукция", "Драгметалл"]
 
 .menu-overlay(class="w-full min-h-full")
-  .menu(class="absolute top-0 left-0 max-w-[790px] w-full h-full pt-[260px] px-[100px] pb-[60px] bg-[#4016A1] 3xl:pl-[30px] xl:max-w-[600px] xl:pt-[180px] md:max-w-full md:pt-[160px] md:pl-[25px] md:pr-[25px]")
+  .menu(class="absolute top-0 left-0 max-w-[790px] w-full pt-[260px] px-[100px] pb-[60px] bg-[#4016A1] 3xl:pl-[30px] xl:max-w-[600px] xl:pt-[180px] md:max-w-full md:pt-[160px] md:pl-[25px] md:pr-[25px]")
     nav.menu-nav(class="flex flex-col items-start gap-8 font-primary-bold font-bold text-[42px] text-white xl:text-[30px] md:text-[28px] sm:text-xl")
       each item in menuLinksList
         a(href="#" class="hover:bg-primary-main")= item
