@@ -1,11 +1,11 @@
 -
   var itemsList = [
-    {title: 'доставка <br> от', value: '1д.', theme: 'pink', valueSize: 'mt-6 text-[96px] lg:mt-4 lg:text-[64px] md:text-2xl'},
-    {title: 'отсрочка <br> до', value: '60д.', theme: 'blue', valueSize: 'mt-9 text-[60px] lg:mt-6 lg:text-[45px] md:text-[34px]'},
+    {title: 'доставка <br> от', value: '1д.', theme: 'pink', valueSize: 'mt-6 text-[96px] lg:mt-4 lg:text-[64px] md:text-[34px]'},
+    {title: 'отсрочка <br> до', value: '60д.', theme: 'blue', valueSize: 'mt-9 text-[60px] lg:mt-6 lg:text-[45px] md:text-2xl'},
     {title: 'видов <br> продукции', value: '290+', theme: 'violet', valueSize: 'mt-[80px] text-[90px] lg:mt-8 lg:text-[60px] md:text-4xl'},
   ]
 
-.ofr(class="pt-[140px]")
+.ofr(class="pt-[140px] 2md:pt-[60px]")
   .ofr-inner.container
     h2.ofr-title(
       class="max-w-[690px] font-primary-med text-[54px] text-white"
@@ -15,7 +15,7 @@
       each item in itemsList
         .ofr-item(
           class="border-t-[15px] pt-4 px-8 pb-1 shadow-md shadow-black/25"
-          class="lg:border-t-[12px] lg:px-6"
+          class="lg:border-t-[12px] lg:px-6 md:pt-3 md:px-3"
           class="_theme-" + item.theme
         )
           h3.orf-item-title(

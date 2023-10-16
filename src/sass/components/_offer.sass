@@ -31,16 +31,17 @@
       display: grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(3, auto)
+      transform: translateY(15%)
     &-item
       &:nth-of-type(1)
         transform: translateY(0)
-        grid-column: 2/3
-        grid-row: 1/2
+        grid-column: 1/2
+        grid-row: 2/3
         justify-self: start
       &:nth-of-type(2)
         transform: translateY(0)
-        grid-column: 1/2
-        grid-row: 2/3
+        grid-column: 2/3
+        grid-row: 1/2
         justify-self: start
       &:nth-of-type(3)
         transform: translateY(0)
