@@ -1,0 +1,22 @@
+mixin category-card(icon, title, btnLabel = "Каталог")
+  .cc(
+    class="min-h-[420px] pb-11 flex flex-col items-center gap-[30px] bg-[#4418A1]"
+    class="lg:min-h-[380px] lg:pb-8 md:min-h-[280px] md:pb-4 md:gap-4"
+  )
+    .cc-icon-wrapper(
+      class="w-full py-10 px-4 flex items-center justify-center bg-[#4A1AAC]"
+      class="lg:py-8 md:py-5"
+    )
+      .cc-icon(
+        class="w-[100px] h-[100px] flex items-center justify-center text-[#8D47F2] [&_svg]:max-w-full [&_svg]:max-h-full"
+        class="lg:w-[80px] lg:h-[80px] md:w-[60px] md:h-[60px]"
+      )!= icon
+    .cc-title(
+      class="mx-3 font-primary-med text-center text-[32px] leading-tight text-white"
+      class="lg:text-2xl md:text-xl"
+    )= title
+    a.cc-btn(
+      href="#"
+      class="mt-auto mx-3 rounded-full border-[2px] border-solid border-[#8D47F2] py-1 px-8 flex justify-center items-center font-primary-reg text-center text-[19px] text-white hover:bg-white/10"
+      class="md:px-4 md:text-sm"
+    )= btnLabel
