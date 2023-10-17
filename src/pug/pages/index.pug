@@ -4,9 +4,11 @@ block variables
   - var pageTitle = 'Главная'
 
 block page
-  div(class="bg-gradient-primary shadow-md shadow-black/10")
-    include ../components/_header.pug
-    include ../components/_main-screen.pug
-    include ../components/_main-tabs.pug
-    include ../components/_offer.pug
-  .box(class="h-[500px] bg-[#371381]")
+  .page(class="bg-[#371381]")
+    div(class="bg-gradient-primary shadow-md shadow-black/10")
+      include ../components/_header.pug
+      include ../components/_main-screen.pug
+      include ../components/_main-tabs.pug
+      include ../components/_offer.pug
+    include ../components/_section-categories.pug
+    include ../components/_footer.pug
