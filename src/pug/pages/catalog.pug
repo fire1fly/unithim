@@ -1,0 +1,9 @@
+extends ../layouts/main.pug
+
+block variables
+  - var pageTitle = 'Каталог'
+
+block page
+  .page(class="min-h-screen bg-gradient-primary")
+    include ../components/_header.pug
+    include ../components/_section-catalog.pug

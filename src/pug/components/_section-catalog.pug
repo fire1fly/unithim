@@ -1,0 +1,20 @@
+-
+  var catsList = ['Бумага индикаторная', 'Бумага фильтровальная', 'Реактивы', 'Индикаторы и красители', 'Фильтры', 'Растворители', 'Стандарты', 'Среды']
+
+.sct
+  .sct-inner.container(class="mt-5 pb-[140px] md:mt-10")
+    h1.sct-title(
+      class="font-primary-bold text-[54px] text-white"
+      class="xl:text-[42px] md:text-3xl"
+    ) Химические реактивы
+    .sct-grid(
+      class="mt-10"
+    )
+      .sct-list(
+        class="max-w-[1030px] grid grid-cols-1 gap-10"
+        class="3xl:max-w-[720px] xl:gap-6 lg:max-w-full"
+      )
+        each item in catsList
+          +category-card-long(item)
+      .sct-outter
+        include ../components/_catalog-help-tooltip.pug
