@@ -1,0 +1,20 @@
+extends ../layouts/main.pug
+
+block variables
+  - var pageTitle = 'Страница не найдена'
+
+block page
+  .page(class="bg-gradient-primary min-h-[100vh]")
+    .h(class="mx-auto max-w-[1750px] px-[30px] md:px-[25px]")
+      .h-inner(class="py-6 flex justify-between items-center gap-4 xl:py-3 md:justify-center md:py-0")
+        .h-logo(class="flex-shrink-0 w-[144px] [&_svg]:w-full xl:w-[120px] md:max-w-[120px] md:w-full")
+          include ../../assets/images/logo.svg
+    .page-msg(class="text-center text-white md:mt-10")
+      .page-msg-title(
+        class="font-primary-bold text-[280px]"
+        class="xl:text-[200px] lg:text-[120px] md:text-[80px] sm:text-5xl"
+      ) 404
+      .page-msg-subtitle(
+        class="font-primary-med text-6xl"
+        class="text-5xl lg:text-4xl md:text-3xl sm:text-2xl"
+      ) Страница не найдена
