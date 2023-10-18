@@ -1,0 +1,10 @@
+extends ../layouts/main.pug
+
+block variables
+  - var pageTitle = 'Доставка'
+
+block page
+  .page(class="min-h-screen bg-gradient-primary")
+    include ../components/_header.pug
+    include ../components/_delivery-info.pug
+    include ../components/_footer.pug
