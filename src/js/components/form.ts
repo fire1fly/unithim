@@ -46,7 +46,7 @@ export function form() {
 
     let response;
     const request = new XMLHttpRequest();
-    const url = './mail.php';
+    const url = window.location.origin + '/mail.php';
     const params = `name=${name.value.trim()}&phone=${phone.value.trim()}&email=${email.value.trim()}&category=${categoryValue || 'Не выбрана'}&message=${message.value.trim()}&quantity=${quantity.value.trim()}&policy=${policy.checked}`;
     request.responseType =	"text";
     request.open("POST", url, true);
