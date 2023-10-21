@@ -1,7 +1,7 @@
 export function mainTabs() {
 
   const tabs = document.querySelectorAll(".tabs-item") as NodeListOf<HTMLElement>;
-  const TIMEOUT = 5000;
+  const TIMEOUT = 3000;
 
   function tabsSwitcher() {
     tabs.forEach((item, index) => {
