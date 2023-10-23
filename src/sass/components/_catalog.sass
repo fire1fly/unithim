@@ -1,0 +1,36 @@
+.sct
+  position: relative
+  &-backdrop
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1
+    border-radius: 800px
+    width: 800px
+    height: 800px
+    filter: blur(150px)
+    &._purple
+      background: rgba(181, 58, 165, 0.80)
+    &._blue
+      background: rgba(45, 169, 233, 0.80)
+    &._violet
+      background: #702DAE
+    &._pink
+      background: rgba(255, 58, 138, 0.70)
+  &-inner
+    position: relative
+    z-index: 2
+
+@media ( max-width: 1440px )
+  .sct
+    &-backdrop
+      width: 500px
+      height: 500px
+      filter: blur(100px)
+
+@media ( max-width: 768px )
+  .sct
+    &-backdrop
+      width: 350px
+      height: 350px
+      filter: blur(75px)
