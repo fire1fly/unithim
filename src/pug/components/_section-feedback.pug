@@ -1,0 +1,125 @@
+.sfb
+  .sfb-inner.container(class="mt-5 md:mt-10")
+    .breads(class="mb-5 flex items-center gap-4")
+      a.breads-item(
+        href="#"
+        class="flex items-center gap-4 font-primary-med text-[19px] text-white/60"
+        class="md:gap-2 md:text-sm"
+      )
+        .breads-icon(
+          class="flex-shrink-0 w-6 h-6 text-white [&_svg]:w-full [&_svg]:max-h-full"
+          class="md:w-[14px] md:h-[14px]"
+        )
+          include ../../assets/images/icon-arrow-left.svg
+        | Назад
+    h1.sfb-title(
+      class="font-primary-bold text-[54px] text-white"
+      class="xl:text-[42px] md:text-3xl"
+    ) Поможем подобрать и вышлем прайс-лист
+    .sfb-cat(
+      class="mt-8 mb-8 rounded-2xl border border-solid border-white inline-block py-2.5 px-10 font-primary-bold text-[19px] text-white"
+      class="lg:mb-5 lg:rounded-[10px] lg:text-sm"
+    ) Выбранная категория
+    form.sfb-form(
+      action="#"
+      class="mt-8 flex items-start gap-10"
+      class="lg:mt-5 md:grid md:grid-cols-1 md:gap-8"
+    )
+      .sfb-form-col(
+        class="flex-shrink-0 w-[293px] grid grid-cols-1 gap-6"
+        class="md:w-full md:max-w-[200px]"
+      )
+        label.sfb-field.input-field
+          .sfb-label.input-label(
+            class="font-primary-reg text-base text-white/60"
+          )  Имя
+          input.input(
+            type="text"
+            name="name"
+            class="border-b border-solid border-white w-full h-6 bg-transparent font-primary-reg text-base text-white"
+          )
+          .input-output(
+            class="mt-2 font-primary-reg text-xs text-[var(--color-primary-main)]"
+          )
+        label.sfb-field.input-field
+          .sfb-label.input-label(
+            class="font-primary-reg text-base text-white/60"
+          )  email
+          input.input(
+            type="email"
+            name="email"
+            class="border-b border-solid border-white w-full h-6 bg-transparent font-primary-reg text-base text-white"
+          )
+          .input-output(
+            class="mt-2 font-primary-reg text-xs text-[var(--color-primary-main)]"
+          )
+        label.sfb-field.input-field
+          .sfb-label.input-label(
+            class="font-primary-reg text-base text-white/60"
+          )  Телефон
+          input.input(
+            type="phone"
+            name="phone"
+            class="border-b border-solid border-white w-full h-6 bg-transparent font-primary-reg text-base text-white"
+          )
+          .input-output(
+            class="mt-2 font-primary-reg text-xs text-[var(--color-primary-main)]"
+          )
+      .sfb-form-col(
+        class="flex-grow grid grid-cols-1 gap-6"
+      )
+        label.sfb-field2.input2-field
+          .sfb-label.input2-label(
+            class="font-primary-reg text-base text-white/60"
+          )  Сообщение
+          textarea.input2(
+            name="message"
+            class="rounded-2xl border border-solid border-white w-full h-[142px] resize-none bg-transparent py-[12px] px-[14px] font-primary-reg text-base text-white"
+          )
+          .input-output2(
+            class="mt-2 font-primary-reg text-xs text-[var(--color-primary-main)]"
+          )
+        label.sfb-field2.input2-field
+          .sfb-label.input2-label(
+            class="font-primary-reg text-base text-white/60"
+          )  Желаемое кол-во/объем
+          input.input2(
+            type="text"
+            name="quantity"
+            class="rounded-2xl border border-solid border-white w-full h-12 resize-none bg-transparent px-[14px] font-primary-reg text-base text-white"
+          )
+          .input-output2(
+            class="mt-2 font-primary-reg text-xs text-[var(--color-primary-main)]"
+          )
+        .sfb-form-f(
+          class="flex items-start justify-between gap-4"
+          class="md:grid md:grid-cols-1"
+        )
+          label.checkbox-wrapper(
+            class="flex items-start gap-[14px]"
+          )
+            .checkbox(
+              class="flex-shrink-0 overflow-hidden rounded-[4px] border border-solid border-white w-[19px] h-[19px] cursor-pointer"
+              class="md:w-4 md:h-4"
+            )
+              input(type="checkbox")
+              .checkbox-check(
+                class="w-full h-full flex justify-center items-center bg-primary-main [&_svg]:max-w-[60%] [&_svg]:max-h-[60%] text-white"
+              )
+                include ../../assets/images/icon-check.svg
+            .checkbox-text(
+              class="font-primary-reg text-base leading-[1.2] text-white/60 [&_a]:text-[var(--color-primary-main)]"
+              class="md:text-sm"
+            )
+              | Соглашаюсь на передачу и обработку персональных данных в соответствии с 
+              a(
+                href="https://docs.google.com/document/d/1fojHxPBxf7YVoThHBT7Fhc_FrHVv9JlS/edit"
+                rel="noreferrer noopener"
+                target="_blank"
+              ) политикой
+          button.sfb-btn-submit(
+            type="submit"
+            class="flex-shrink-0 w-[50px] h-[50px] [&_svg]:w-full [&_svg]:h-full text-white"
+            class="md:justify-self-end"
+          )
+            include ../../assets/images/icon-arrow-circle-right.svg
