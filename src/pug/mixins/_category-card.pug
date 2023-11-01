@@ -8,9 +8,10 @@ mixin category-card(icon, title, btnLabel = "Каталог")
       class="lg:py-8 md:py-5"
     )
       .cc-icon(
-        class="w-[100px] h-[100px] flex items-center justify-center text-[#8D47F2] [&_svg]:max-w-full [&_svg]:max-h-full"
+        class="w-[100px] h-[100px] flex items-center justify-center text-[#8D47F2]"
         class="lg:w-[80px] lg:h-[80px] md:w-[60px] md:h-[60px]"
-      )!= icon
+      )
+        +image(icon)
     .cc-title(
       class="mx-3 font-primary-med text-center text-[32px] leading-tight text-white"
       class="lg:text-2xl md:text-xl"
