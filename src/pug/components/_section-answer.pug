@@ -1,0 +1,41 @@
+.san.sfb-form-feedback(
+  class="absolute top-0 left-0 w-full"
+)
+  .san-backtext(
+    class="absolute top-1/2 left-1/2 z-[1] translate-x-[-50%] translate-y-[-50%] w-full"
+  )
+    +image('answer-text.svg', 'w-full')
+  .san-inner.container(
+    class="relative z-[2] pt-20 text-white"
+    class="lg:pt-[60px] md:pt-10"
+  )
+    h2.san-title(
+      class="font-primary-bold text-center text-[54px]"
+      class="lg:text-[42px] md:text-[32px]"
+    ) Скоро вернемся с ответом
+    p.san-subtitle(
+      class="mt-16 font-primary-reg text-center"
+      class="lg:mt-10 lg:text-[19px] [&_b]:font-primary-med"
+    ) Наш специалист свяжется с вами в течение <b>5</b> минут. Благодарим за ожидание!
+    .san-f(
+      class="mt-[110px] flex items-center justify-center flex-wrap gap-6"
+      class="lg:mt-[80px] md:mt-[60px] md:gap-4"
+    )
+      a.san-link(
+        href="#"
+        class="rounded-2xl border border-solid border-white min-w-[260px] h-[54px] flex items-center justify-center px-4 duration-200 hover:bg-white/10"
+        class="lg:min-w-[210px] lg:h-[48px]"
+      )
+        .btn-text(
+          class="font-primary-med text-2xl text-center text-white"
+          class="lg:text-[19px]"
+        ) На главную
+      a.san-link(
+        href="#"
+        class="rounded-2xl border border-solid border-white min-w-[260px] h-[54px] flex items-center justify-center px-4 duration-200 hover:bg-white/10"
+        class="lg:min-w-[210px] lg:h-[48px]"
+      )
+        .btn-text(
+          class="font-primary-med text-2xl text-center text-white"
+          class="lg:text-[19px]"
+        ) Прайс лист
