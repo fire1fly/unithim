@@ -34,6 +34,25 @@
       &:not(:disabled)
         &:hover
           color: var(--color-primary-main)
+  &-inner
+    opacity: 1
+    visibility: visible
+    z-index: 1
+    transition: 0.2s ease-out
+    &._hidden
+      opacity: 0
+      visibility: hidden
+      z-index: -1
+  &-form
+    &-feedback
+      opacity: 0
+      visibility: hidden
+      z-index: -1
+      transition: 0.2s ease-out
+      &._active
+        opacity: 1
+        visibility: visible
+        z-index: 2
 
 @media ( max-width: 768px )
   .sfb

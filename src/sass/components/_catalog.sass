@@ -1,5 +1,12 @@
 .sct
-  position: relative
+  &-page
+    .sfb
+      display: none
+    &._hidden
+      .sct
+        display: none
+      .sfb
+        display: block
   &-backdrop
     position: absolute
     top: 0
