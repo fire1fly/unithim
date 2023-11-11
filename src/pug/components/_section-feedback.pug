@@ -1,5 +1,7 @@
-.sfb
-  .sfb-inner.container(class="mt-5 md:mt-10")
+.sfb(
+  class="relative"
+)
+  .sfb-inner.container(class="relative mt-5 md:mt-10")
     .breads(class="mb-5 flex items-center gap-4")
       a.breads-item(
         href="#"
@@ -17,11 +19,12 @@
       class="xl:text-[42px] md:text-3xl"
     ) Поможем подобрать и вышлем прайс-лист
     .sfb-cat(
+      class="hidden"
       class="mt-8 mb-8 rounded-2xl border border-solid border-white inline-block py-2.5 px-10 font-primary-bold text-[19px] text-white"
       class="lg:mb-5 lg:rounded-[10px] lg:text-sm"
     ) Выбранная категория
     form.sfb-form(
-      action="#"
+      name="feedbackForm"
       class="mt-8 flex items-start gap-10"
       class="lg:mt-5 md:grid md:grid-cols-1 md:gap-8"
     )
@@ -58,7 +61,8 @@
             class="font-primary-reg text-base text-white/60"
           )  Телефон
           input.input(
-            type="phone"
+            type="tel"
+            pattern="^[ 0-9]+$"
             name="phone"
             class="border-b border-solid border-white w-full h-6 bg-transparent font-primary-reg text-base text-white"
           )
@@ -102,7 +106,10 @@
               class="flex-shrink-0 overflow-hidden rounded-[4px] border border-solid border-white w-[19px] h-[19px] cursor-pointer"
               class="md:w-4 md:h-4"
             )
-              input(type="checkbox")
+              input(
+                type="checkbox"
+                name="policy"
+              )
               .checkbox-check(
                 class="w-full h-full flex justify-center items-center bg-primary-main [&_svg]:max-w-[60%] [&_svg]:max-h-[60%] text-white"
               )
@@ -118,8 +125,13 @@
                 target="_blank"
               ) политикой
           button.sfb-btn-submit(
+            id=""
             type="submit"
             class="flex-shrink-0 w-[50px] h-[50px] [&_svg]:w-full [&_svg]:h-full text-white"
             class="md:justify-self-end"
           )
             include ../../assets/images/icon-arrow-circle-right.svg
+        .sfb-form-response(
+          class="text-right font-primary-reg text-sm text-[var(--color-primary-main)]"
+        )
+  include ../components/_section-answer.pug
